@@ -8,7 +8,6 @@ import {
 
 @Entity('todos')
 export class TodoEntity {
-
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -18,7 +17,7 @@ export class TodoEntity {
   @Column()
   description: string;
 
-  @Column({ type: 'boolean', default: false, })
+  @Column({ type: 'boolean', default: false })
   is_done: boolean;
 
   @CreateDateColumn()
